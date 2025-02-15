@@ -5,7 +5,7 @@ import { io } from "socket.io-client";
 import { v4 as uuidv4 } from "uuid";
 
 const ChatRoom = ({ roomId }) => {
-    const socket = useMemo(() => io("http://localhost:3000"), []);
+    const socket = useMemo(() => io("https://chat-bot-tau-ten.vercel.app"), []);
     const [message, setMessage] = useState("");
     const [chat, setChat] = useState([]);
     const [userId, setUserId] = useState("");
